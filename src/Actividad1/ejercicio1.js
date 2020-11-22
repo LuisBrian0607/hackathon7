@@ -1,7 +1,6 @@
 import React from 'react';
-import { View, StyleSheet } from 'react-native';
+import { View, StyleSheet,SafeAreaView } from 'react-native';
 import {Header} from './components/header';
-//import {Carrusel} from './components/carrusel';
 import {Contenido} from './components/contenido';
 
 
@@ -14,12 +13,11 @@ const styles=StyleSheet.create({
 export const Ejercicio1=()=>{
     return(
         <> 
-           <View style={styles.container}>
-               <Header/>
-               {/*<Carrusel/>*/}
+           <SafeAreaView style={styles.container}>
+               <Header/>           
                <Contenido/>
 
-           </View>
+           </SafeAreaView>
         </>
     )
    
